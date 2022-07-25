@@ -8,30 +8,30 @@ Browsers are fully-functional software suites that can interpret and display HTM
 ## High level components of a browser
 The browser's main components are :
 
-### The user interface:
+#### The user interface:
 
 This includes the address bar, back/forward button, bookmarking menu, etc. Every part of the browser display except the window where you see the requested page.
 
-### The browser engine: 
+#### The browser engine: 
 Marshals actions between the UI and the rendering engine.
 
-### The rendering engine :
+#### The rendering engine :
 
 Responsible for displaying requested content. For example if the requested content is HTML, the rendering engine parses HTML and CSS, and displays the parsed content on the screen.
 
-### Networking:
+#### Networking:
 
 For network calls such as HTTP requests, using different implementations for different platform behind a platform-independent interface.
 
-### UI backend:
+#### UI backend:
 
 Used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. Underneath it uses operating system user interface methods.
 
-### JavaScript interpreter:
+#### JavaScript interpreter:
 
 Used to parse and execute JavaScript code.
 
-### Data storage.
+#### Data storage.
 
 This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
 
@@ -51,3 +51,7 @@ The script processor executes Javascript code to process an event. The processor
 First, the browser combines the DOM and CSSOM into a "render tree," which captures all the visible DOM content on the page and all the CSSOM style information for each node. To construct the render tree, the browser roughly does the following: Starting at the root of the DOM tree, traverse each visible node.
 ## Order of script processing
 If we aren't dynamically loading scripts or marking them as defer or async, then scripts are loaded in the order encountered in the page. It doesn't matter whether it's an external script or an inline script - they are executed in the order they are encountered in the page.
+## Layout and Painting
+Layout will be responsible for calculating positions and dimensions of each and every node on the screen. If we resize the screen size then it will be called again and position and dimension will be calculated again and components will be resized accordingly. Now we have computed size of each components in pixel all the nodes present in DOM tree will be will be rendered of actual size on screen
+
+**How the request will be processed by browser**<br> ![Browser flow](Week-1\Assignemnt-1.1\Browser_Flow.jpg)
