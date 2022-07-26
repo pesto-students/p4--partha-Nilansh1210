@@ -54,4 +54,5 @@ If we aren't dynamically loading scripts or marking them as defer or async, then
 ## Layout and Painting
 Layout will be responsible for calculating positions and dimensions of each and every node on the screen. If we resize the screen size then it will be called again and position and dimension will be calculated again and components will be resized accordingly. Now we have computed size of each components in pixel all the nodes present in DOM tree will be will be rendered of actual size on screen
 
-**How the request will be processed by browser**<br> ![Browser flow](Week-1\Assignemnt-1.1\Browser_Flow.jpg)
+**How the request will be processed by browser**<br> 
+![Browser flow](https://939506.smushcdn.com/2600043/wp-content/uploads/2019/07/Typical-Block-Diagarm-Showing-Rendering-Process-Web-Browsers.gif?lossy=0&strip=1&webp=1)
