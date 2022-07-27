@@ -46,6 +46,8 @@ header {
 
 table {
   width: 100%;
+  padding-left: 5px;
+  padding-top: 8px;
 }
 
 td {
