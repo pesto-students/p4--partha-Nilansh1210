@@ -28,4 +28,4 @@ log();
 ## The output will be - Count is 0
 
 ## Why? - 
-##  When the message string is created, the count value is resolved immediately, which is 0. And then the log function logs it. Hence the message is only created once and the count keeps changing. Thus even after calling increment function multiple times, the message string still remains 0.
+##  When the message string is created, the count value is resolved immediately, which is 0. And then the log function logs it. Hence the message is only created once and the count keeps changing. Thus even after calling increment function multiple times, the message string still remains 0 .
